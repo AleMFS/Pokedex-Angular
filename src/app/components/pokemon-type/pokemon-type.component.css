@@ -1,0 +1,17 @@
+.model_type {
+    padding: 0.4rem 0.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-shadow: black 1px 0 6px;
+}
+
+.model_type>img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    text-shadow: #FC0 0px 0 6px;
+
+}
+

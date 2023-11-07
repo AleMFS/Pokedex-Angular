@@ -1,0 +1,7 @@
+<div class="pokemon-grid ">
+    <div class="box" *ngFor="let pokemons of pokemon | paginate: {itemsPerPage:itemsPerPag,currentPage: 1}" [ngClass]="pokemons.types[0].type.name">
+        <app-pokemon-card [pokemon]="pokemons" [sizeImg]="sizeImg" [topImg]="topImg"></app-pokemon-card>
+        <button href="" (click)="gerarString(pokemons.name)" (click)="handleOpenModal()" [ngClass]="'type_' + pokemons.types[0].type.name" >Mais informações</button>        
+    </div>
+
+</div>

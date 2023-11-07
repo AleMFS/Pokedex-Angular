@@ -1,0 +1,16 @@
+<div class="container" >
+    <img
+        [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/' + pokemon?.id + '.png'"
+        alt=""  [ngStyle]="{ 'top': topImg + 'rem', 'width': sizeImg +'rem' }">
+    <p class="pokemon_id">#{{ formatPokemonId(pokemon?.id) }}</p>
+    <h3 class="pokemon_name">{{firstToUpperCase(pokemon?.name)}}</h3>
+    <div class="types_container">
+
+        <div *ngFor="let type of pokemon?.types " [ngClass]="'type_'+type?.type.name " class="model_type">
+            <app-pokemon-type [type]="type?.type.name"></app-pokemon-type>
+        </div>
+    </div>
+
+    <app-metrics-pokemon [pokemon]="pokemon"></app-metrics-pokemon>
+
+</div>

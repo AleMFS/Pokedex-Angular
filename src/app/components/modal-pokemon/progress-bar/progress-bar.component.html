@@ -1,0 +1,13 @@
+<div class="status_container" *ngIf="pokemon">
+    <p>Status </p>
+    <div class="status" *ngFor="let status of pokemon.stats">
+        <p>{{nameAbrev(status.stat.name)}}</p>
+        <p>{{status.base_stat}}</p>
+
+        <div class="barra">
+            <div class="statsPokemon" [ngStyle]="{'max-width': status.base_stat + '%','background-color': status.base_stat > 50 ? '#1cd80e' : 'red'}"></div>
+        </div>
+    </div>
+
+
+</div>

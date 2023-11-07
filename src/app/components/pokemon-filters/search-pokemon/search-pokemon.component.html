@@ -1,0 +1,7 @@
+<div class="container_form">
+    <input type="text" #inputValue (keyup.enter)="handleSearch(inputValue.value)" placeholder="Pesquisar Pokémon" required>
+    <button (click)="handleSearch(inputValue.value)">
+      <img [src]="'../../../../assets/icon-search.svg'" alt="">
+    </button>
+  </div>
+  

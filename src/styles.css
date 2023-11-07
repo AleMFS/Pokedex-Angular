@@ -1,1 +1,191 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  
+}
+
+body {
+    background: #060B28;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    
+
+   
+  }
+  body::-webkit-scrollbar {
+    width: 1rem;               
+  }
+
+
+
+
+  body::-webkit-scrollbar-track {
+    background: #060B28;        
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #2F5AFF;    
+    border-radius: .5rem;       
+    border: 0.25rem solid #060B28;  
+  }
+
+
+.type_fire {
+
+    background-color: #ff9900;
+}
+
+.type_water {
+
+    background-color: #13a8f9;
+}
+
+.type_grass {
+    background-color: #1cd80e;
+
+}
+
+.type_bug {
+
+    background-color: #7BCF00;
+}
+
+.type_normal {
+
+    background-color: #9ea39e;
+}
+
+.type_poison {
+    background-color: #f149f8;
+}
+
+.type_dark {
+    background-color: #5a566a;
+}
+
+.type_dragon {
+    background-color: #0076ff;
+}
+
+.type_ground {
+    background-color: #ff6b0d;
+}
+
+.type_electric {
+
+    background-color: #ffde00;
+
+}
+
+.type_fairy {
+    background-color: #ff76ff;
+}
+
+.type_psychic {
+    background-color: #ff6c64;
+}
+
+.type_fighting {
+    background-color: #ff215b;
+}
+
+.type_flying {
+    background-color: #89bdff;
+}
+
+.type_ghost {
+    background-color: #4e6aff;
+}
+
+.type_ice {
+    background-color: #2ee4c6;
+}
+
+.type_rock {
+    background-color: #d8bc5a;
+}
+
+.type_steel {
+    background-color: #23a1bd;
+}
+
+.fire {
+    background: radial-gradient(ellipse at center, rgba(255, 153, 0, 0.5), transparent);
+
+}
+
+.water {
+    background: radial-gradient(ellipse at center, rgba(19, 168, 249, 0.5), transparent);
+
+}
+
+.grass {
+
+    background: radial-gradient(ellipse at center, rgba(28, 216, 14, 0.5), transparent);
+}
+
+.bug {
+
+
+    background: radial-gradient(ellipse at center, rgba(123, 207, 0, 0.5), transparent);
+}
+
+.normal {
+    background: radial-gradient(ellipse at center, rgba(158, 163, 158, 0.5), transparent)
+}
+
+.poison {
+    background: radial-gradient(ellipse at center, rgba(241, 73, 248, 0.5), transparent)
+}
+
+.dark {
+    background: radial-gradient(ellipse at center, rgba(90, 86, 106, 0.5), transparent)
+}
+
+.dragon {
+    background: radial-gradient(ellipse at center, rgba(0, 118, 255, 0.5), transparent)
+}
+
+.ground {
+    background: radial-gradient(ellipse at center, rgba(255, 107, 13, 0.5), transparent)
+}
+
+.electric {
+
+    background: radial-gradient(ellipse at center, rgba(255, 222, 0, 0.5), transparent)
+
+}
+
+.fairy {
+    background: radial-gradient(ellipse at center, rgba(255, 118, 255, 0.5), transparent)
+}
+
+.psychic {
+    background: radial-gradient(ellipse at center, rgba(255, 108, 100, 0.5), transparent)
+}
+
+.fighting {
+    background: radial-gradient(ellipse at center, rgba(255, 33, 91, 0.5), transparent)
+}
+
+.flying {
+    background: radial-gradient(ellipse at center, rgba(137, 189, 255, 0.5), transparent)
+}
+
+.ghost {
+    background: radial-gradient(ellipse at center, rgba(78, 106, 255, 0.5), transparent)
+}
+
+.ice {
+    background: radial-gradient(ellipse at center, rgba(46, 228, 198, 0.5), transparent)
+}
+
+.rock {
+    background: radial-gradient(ellipse at center, rgba(216, 188, 90, 0.5), transparent)
+}
+
+.steel {
+    background: radial-gradient(ellipse at center, rgba(35, 161, 189, 0.5), transparent)
+}

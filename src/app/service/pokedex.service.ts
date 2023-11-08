@@ -11,7 +11,7 @@ export class PokedexService {
 
   constructor(private http: HttpClient) { }
 
-  private pokedexAPI = 'https://pokeapi.co/api/v2/pokemon?limit=10'
+  private pokedexAPI = 'https://pokeapi.co/api/v2/pokemon?limit=300'
 
   getPokemons() {
     return this.http.get(`${this.pokedexAPI}`); // Substitua pela URL da sua API

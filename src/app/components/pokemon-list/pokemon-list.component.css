@@ -4,8 +4,8 @@
     justify-content: center;
     align-items: center;
     gap: 50px;
-    
-    
+
+
 }
 
 .box {
@@ -19,35 +19,39 @@
     margin-top: 8rem;
     position: relative;
     animation: fadeDown 0.8s;
-    
-    /* Azul marinho com 70% de transparência */   
 
-    
+    /* Azul marinho com 70% de transparência */
+
+
 }
 
 @keyframes fadeDown {
     from {
-      opacity: 0;
-      transform: translate3d(0, -32px, 0);
+        opacity: 0;
+        transform: translate3d(0, -32px, 0);
     }
+
     to {
-      opacity: initial;
-      transform: initial;
-      
+        opacity: initial;
+        transform: initial;
+
     }
-  }
+}
+
 .box::before {
     content: '';
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 100%; /* Largura do centro amarelo */
-    height: 100%; /* Altura do centro amarelo */
-     /* Gradiente radial amarelo esfumaçado */
+    width: 100%;
+    /* Largura do centro amarelo */
+    height: 100%;
+    /* Altura do centro amarelo */
+    /* Gradiente radial amarelo esfumaçado */
     border-radius: 10px;
     transform: translate(-50%, -50%);
     z-index: -1;
-  }
+}
 
 
 
@@ -66,11 +70,36 @@
     text-shadow: black 1px 0 10px;
     cursor: pointer;
 }
-.box>button:hover{
+
+.box>button:hover {
     opacity: 0.8;
 }
 
+.pagination {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+
+.my-pagination ::ng-deep .ngx-pagination .current {
+    background-color: #13a8f9;
+    color: #FFF;    
+    border-radius: 5px;
+    
+    
+}
+.my-pagination ::ng-deep .ngx-pagination a {
+    background-color: transparent;    
+    color: #FFF;    
+    border-radius: 5px;
+    
+}
+.my-pagination ::ng-deep .ngx-pagination {
+    font-size: 1.5rem;
+}
 
 .type_fire {
 

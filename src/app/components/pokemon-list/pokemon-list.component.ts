@@ -18,37 +18,52 @@ export class PokemonListComponent {
   @Output() stringGerada = new EventEmitter<string>();
   @Output() abrirFilho2 = new EventEmitter<void>();
 
-  @Input() pokemon:any[]= [];
+  @Input() pokemon: any[] = [];
+  page: number = 1;
 
-  sizeImg:number= 14.375;
-  topImg:number= -10.5
   
+  sizeImg: number = 14.375;
+  topImg: number = -10.5
+
+
+  handlePageChange(pageNumber: number) {
+    this.page = pageNumber;
+
+    // Scroll to top ao mudar a página
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
   handleOpenModal() {
     this.abrirFilho2.emit();
   }
-
-  gerarString(string:string) {
-    
-    this.stringGerada.emit(string);
-    
+  limitarPaginacao(page: number) {
+    if (page > 4) {
+      this.page = 4;
+    }
   }
-  
+
+  gerarString(string: string) {
+
+    this.stringGerada.emit(string);
+
+  }
 
 
-  teste:any[] = []
+
+  teste: any[] = []
   pokemons: any[] = [];
   itemsPerPag = 60;
-  
- 
-  
+
+
+
 
 
   maisItens() {
     this.itemsPerPag += 12
   }
- 
 
 
-  
+
+
 
 }

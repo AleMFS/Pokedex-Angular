@@ -32,6 +32,13 @@ body {
   }
 
 
+  @media (max-width:600px) {
+    body{
+        font-size: 87%;
+    }
+}
+
+
 .type_fire {
 
     background-color: #ff9900;

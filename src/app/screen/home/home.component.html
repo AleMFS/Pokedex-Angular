@@ -1,5 +1,9 @@
 <div class="container">
-<app-pokemon-filters (filtrarPokemons)="chooseElement($event)" (searchInput)="handleSearchPokemonPai($event)"></app-pokemon-filters>
-<app-pokemon-list (stringGerada)="receberString($event)" (abrirFilho2)="onOpenOrCloseModal()" [pokemon]="pokemon"></app-pokemon-list>
-<app-modal-pokemon [dados]="pokemonSelected" [pokemonData]="PokemonData" *ngIf="isModalOpen" (closeModal)="onOpenOrCloseModal()"></app-modal-pokemon>
+    <app-pokemon-filters (filtrarPokemons)="chooseElement($event)"
+        (searchInput)="handleSearchPokemonPai($event)"></app-pokemon-filters>
+    <app-pokemon-list [page]="page" (stringGerada)="receberString($event)" (abrirFilho2)="onOpenOrCloseModal()"
+        [pokemon]="pokemon"></app-pokemon-list>
+    <app-modal-pokemon [dados]="pokemonSelected" [pokemonData]="PokemonData" *ngIf="isModalOpen"
+        (closeModal)="onOpenOrCloseModal()"></app-modal-pokemon>
+
 </div>

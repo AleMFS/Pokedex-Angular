@@ -14,6 +14,8 @@ export class HomeComponent {
   pokemon: any[] = [];
   typeSelected: any[] = [];
 
+  page:number = 1;
+
   constructor(private dataService: PokedexService) {
   }
 
@@ -48,7 +50,7 @@ export class HomeComponent {
       this.typeSelected = this.pokemonteste.filter((pokemon: any) => {
         return pokemon.types.some((type: any) => type.type.name === string);
       })
-
+      this.page = 1
       this.pokemon = this.typeSelected
     };
   }
@@ -57,12 +59,14 @@ export class HomeComponent {
       this.typeSelected = this.pokemonteste.filter((pokemon: any) => {
         return pokemon.name.toLowerCase().startsWith(partialString.toLowerCase());
       });
-
+      this.page = 1
       this.pokemon = this.typeSelected;
     }
   }
 
-
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
 
   requisicaoAPI() {
     this.dataService.getPokemons()

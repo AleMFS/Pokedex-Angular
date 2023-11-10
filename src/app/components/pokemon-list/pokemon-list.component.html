@@ -1,7 +1,7 @@
 <div class="pokemon-grid">
     <div class="box" *ngFor="let pokemons of pokemon | paginate: { itemsPerPage: 12, currentPage: page }"
         [ngClass]="pokemons.types[0].type.name">
-        <app-pokemon-card [pokemon]="pokemons" [sizeImg]="sizeImg" [topImg]="topImg"></app-pokemon-card>
+        <app-pokemon-card [pokemon]="pokemons" classe="fullScreen"></app-pokemon-card>
         <button href="" (click)="gerarString(pokemons.name); handleOpenModal()"
             [ngClass]="'type_' + pokemons.types[0].type.name">Mais informações</button>
     </div>
@@ -17,5 +17,6 @@
     previousClass="custom-previous-button"  
     nextLabel=""  
     nextClass="custom-next-button"
+    maxPages="10">
   ></pagination-controls>
 </div>

@@ -19,7 +19,8 @@ export class PokemonListComponent {
   @Output() abrirFilho2 = new EventEmitter<void>();
 
   @Input() pokemon: any[] = [];
-  page: number = 1;
+  @Input() page:number = 1
+  
 
   
   sizeImg: number = 14.375;
@@ -31,6 +32,7 @@ export class PokemonListComponent {
 
     // Scroll to top ao mudar a página
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    console.log(this.page)
   }
 
   handleOpenModal() {

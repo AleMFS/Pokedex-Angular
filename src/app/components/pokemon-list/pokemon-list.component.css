@@ -101,6 +101,33 @@
     font-size: 1.5rem;
 }
 
+
+@media (max-width: 881px){
+
+   .pokemon-grid{
+    grid-template-columns: repeat(2,1fr);
+   } 
+}
+@media (max-width: 600px){
+
+    .pokemon-grid{
+        grid-template-columns: repeat(1, 320px);
+    } 
+    .my-pagination ::ng-deep .ngx-pagination {
+        font-size: 1.1rem;
+    }
+ }
+
+
+
+
+
+
+
+
+
+
+
 .type_fire {
 
     background-color: #ff9900;

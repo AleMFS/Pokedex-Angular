@@ -8,8 +8,8 @@ import { Component, Input } from '@angular/core';
 export class PokemonCardComponent {
 
   @Input() pokemon:any
-  @Input() sizeImg:number = 0
-  @Input() topImg:number = 0
+  @Input() classe:string = ''
+  
 
   firstToUpperCase(string: string) {
     if (string && string.length > 0) {

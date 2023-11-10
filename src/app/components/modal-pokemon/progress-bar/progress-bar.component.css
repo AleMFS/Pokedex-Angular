@@ -1,14 +1,16 @@
 .status_container{
-    flex: 1;
+    
     padding: 1rem;
+    min-width: 320px;
     
 }
 .status_container > p{
-   margin-left: 1rem;
+  
    font-size: 1.5rem;
 }
 
 .status{
+    
     display: flex;
     align-items: center;
     justify-content: space-between;

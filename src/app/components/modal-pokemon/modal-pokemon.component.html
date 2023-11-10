@@ -1,12 +1,23 @@
 <div class="container">
-    <div class="modal_container"   >
+    <div class="modal_container"  >
         <div class="container_pokemon" >
-            <app-pokemon-card [pokemon]="pokemonData"  [sizeImg]="sizeImg" [topImg]="topImg"></app-pokemon-card>
+            <app-pokemon-card [pokemon]="pokemonData"  classe="modal"></app-pokemon-card>
         </div>
         <div class="line"></div>
         <div class="status_container">
             <app-progress-bar [pokemon]="pokemonData"></app-progress-bar>
-        </div>     
+        </div>      
+
+        <button (click)="handlecloseModal()">X</button>
+    </div>
+    <div class="modal_mobile" >
+        <div class="container_pokemon" >
+            <app-pokemon-card [pokemon]="pokemonData"  classe="modal"></app-pokemon-card>
+        </div>
+        <div class="line"></div>
+        <div class="status_container">
+            <app-progress-bar [pokemon]="pokemonData"></app-progress-bar>
+        </div>      
 
         <button (click)="handlecloseModal()">X</button>
     </div>

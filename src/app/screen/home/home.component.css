@@ -3,5 +3,23 @@
     max-width: 77.5rem;
     display: flex;
     flex-direction: column;
+    position: relative;
    
+}
+
+.scrollTop{
+    height: 3rem;
+    width: 3rem;
+   
+    border: 1px solid #13a8f9; 
+    border-radius: 999px;  
+    position: absolute;
+    bottom: 0;
+    right: -50px;
+     
+}
+.scrollTop:hover{
+    transform: scale(1.2);
+    
+    
 }

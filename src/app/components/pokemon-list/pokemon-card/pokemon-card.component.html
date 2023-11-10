@@ -1,7 +1,7 @@
 <div class="container" >
     <img
         [src]="'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/' + pokemon?.id + '.png'"
-        alt=""  [ngStyle]="{ 'top': topImg + 'rem', 'width': sizeImg +'rem' }">
+        alt=""  [ngClass]="classe">
     <p class="pokemon_id">#{{ formatPokemonId(pokemon?.id) }}</p>
     <h3 class="pokemon_name">{{firstToUpperCase(pokemon?.name)}}</h3>
     <div class="types_container">

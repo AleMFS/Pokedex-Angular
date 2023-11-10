@@ -6,13 +6,14 @@ const animation = { duration: 50000, easing: (t: any) => t }
 @Component({
   selector: 'app-pokemon-filters',
   templateUrl: './pokemon-filters.component.html',
-  styleUrls: ['./pokemon-filters.component.css',
+  styleUrls: ['./pokemon-filters.component.css','./responsive.css',
     "../../../../node_modules/keen-slider/keen-slider.min.css"]
 })
 export class PokemonFiltersComponent {
-  @Output() filtrarPokemons = new EventEmitter<string>();
-  
+  @Output() filtrarPokemons = new EventEmitter<string>();  
   @Output() searchInput: EventEmitter<string> = new EventEmitter<string>();
+
+  
 
   handleSearch(value: string) {
     this.searchInput.emit(value);
@@ -29,7 +30,7 @@ export class PokemonFiltersComponent {
       mode: "free-snap",
       rtl: false,
       slides: { origin: "auto", perView: "auto", spacing: 5 },
-      created(s) {
+      /*created(s) {
         s.moveToIdx(5, true, animation)
       },
       updated(s) {
@@ -37,7 +38,7 @@ export class PokemonFiltersComponent {
       },
       animationEnded(s) {
         s.moveToIdx(s.track.details.abs + 5, true, animation)
-      },
+      },*/
     })
   }
 

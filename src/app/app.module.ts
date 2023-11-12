@@ -15,6 +15,7 @@ import { ProgressBarComponent } from './components/modal-pokemon/progress-bar/pr
 import { PokemonCardComponent } from './components/pokemon-list/pokemon-card/pokemon-card.component';
 import { PokemonFiltersComponent } from './components/pokemon-filters/pokemon-filters.component';
 import { SearchPokemonComponent } from './components/pokemon-filters/search-pokemon/search-pokemon.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 // register Swiper custom elements
 
@@ -32,6 +33,7 @@ import { SearchPokemonComponent } from './components/pokemon-filters/search-poke
     PokemonCardComponent,
     PokemonFiltersComponent,
     SearchPokemonComponent,
+    FooterComponent,
 
 
 

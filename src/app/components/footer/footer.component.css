@@ -1,0 +1,25 @@
+.container_footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgb(36, 41, 63);
+    margin-bottom: 1rem;
+    
+
+}
+
+img,svg{
+    width: 50px;
+    
+}
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.linkedin{
+    
+  
+}

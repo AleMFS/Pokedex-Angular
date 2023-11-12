@@ -1,41 +1,50 @@
-*{
+* {
     border: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  
+
+
 }
 
 body {
     background: #060B28;
     color: #ffffff;
     font-family: 'Montserrat', sans-serif;
-    
-    
-
-   
-  }
-  body::-webkit-scrollbar {
-    width: 1rem;               
-  }
 
 
 
 
-  body::-webkit-scrollbar-track {
-    background: #060B28;        
-  }
+}
 
-  body::-webkit-scrollbar-thumb {
-    background-color: #2F5AFF;    
-    border-radius: .5rem;       
-    border: 0.25rem solid #060B28;  
-  }
+body::-webkit-scrollbar {
+    width: 1rem;
+}
 
 
-  @media (max-width:600px) {
-    body{
+
+
+body::-webkit-scrollbar-track {
+    background: #060B28;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #2F5AFF;
+    border-radius: .5rem;
+    border: 0.25rem solid #060B28;
+}
+
+
+@media (max-width:600px) {
+    body {
         font-size: 87%;
+
+    }
+}
+
+@media (max-height:600px) {
+    body {
+        orientation-lock: landscape;
+
     }
 }
 
@@ -163,7 +172,6 @@ body {
 .electric {
 
     background: radial-gradient(ellipse at center, rgba(255, 222, 0, 0.5), transparent)
-
 }
 
 .fairy {

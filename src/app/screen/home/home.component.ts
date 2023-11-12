@@ -30,13 +30,13 @@ export class HomeComponent {
 
   onOpenOrCloseModal() {
     this.isModalOpen = !this.isModalOpen;
-    console.log(this.pokemonSelected)
+    
   }
 
   chamarAPI(string: string) {
     this.dataService.getMoreData(string).subscribe((response) => {
       this.PokemonData = response
-      console.log(response)
+     
     })
   }
 
@@ -56,7 +56,7 @@ export class HomeComponent {
   }
   handleSearchPokemonPai(partialString: string) {
     if (this.pokemonteste) {
-      this.typeSelected = this.pokemonteste.filter((pokemon: any) => {
+      this.typeSelected = this.pokemon.filter((pokemon: any) => {
         return pokemon.name.toLowerCase().startsWith(partialString.toLowerCase());
       });
       this.page = 1
@@ -79,7 +79,7 @@ export class HomeComponent {
           this.pokemon = responses;
           this.pokemonteste = responses
 
-          console.log(this.pokemon);
+          
 
         });
       });

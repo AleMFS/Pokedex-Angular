@@ -1,4 +1,4 @@
-# Project LOL
+# Pokedex Angular
 
 
 ## 💻 Sobre

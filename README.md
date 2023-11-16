@@ -29,6 +29,6 @@ Para rodar esse projeto em seu computador:
 2. `ng serve`
 ```
 
-![](.//src//assets//git.png)
+![](.//src//assets//Git.png)
 
 

@@ -55,6 +55,9 @@ export class HomeComponent {
     };
   }
   handleSearchPokemonPai(partialString: string) {
+    if(partialString.length == 0){
+      this.requisicaoAPI()
+    }
     if (this.pokemonteste) {
       this.typeSelected = this.pokemon.filter((pokemon: any) => {
         return pokemon.name.toLowerCase().startsWith(partialString.toLowerCase());

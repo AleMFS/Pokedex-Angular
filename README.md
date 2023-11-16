@@ -1,27 +1,34 @@
-# Pokedex
+# Project LOL
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
 
-## Development server
+## 💻 Sobre
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+A Pokédex é uma ferramenta que permite aos usuários visualizar informações sobre todos os Pokémons, incluindo seus nomes, tipos, estatísticas, evoluções e habilidades. O projeto é dividido em duas partes:
 
-## Code scaffolding
+Página inicial: apresenta uma lista de todos os Pokémons, que podem ser ordenados por nome, tipo ou número.
+Página de detalhes: apresenta informações detalhadas sobre um Pokémon específico, incluindo sua imagem, descrição, estatísticas, evoluções e habilidades.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Link : https://pokedex-angular-flame.vercel.app/
 
-## Build
+<br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# 🛠️ Tools used 
 
-## Running unit tests
+- [Angular](https://angular.io)
+- [TypeScript](https://www.typescriptlang.org/docs/)
+- [Bootstrap](https://styled-components.com/)
+- [API Pokemon](https://pokeapi.co)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+# Desktop
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Para rodar esse projeto em seu computador:
 
-## Further help
+```
+1. `npm i`
+2. `ng serve`
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+![](.//src//assets//git.png)
+
+

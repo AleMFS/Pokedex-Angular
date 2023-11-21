@@ -17,7 +17,7 @@ img {
     
 }
 .modal{
-   width: 21.375rem;
+   width: 20.375rem;
     top: -11.5rem;
 }
 
@@ -88,6 +88,8 @@ img {
       
     }
   }
+
+  
 
   @media(max-width:881px){
 

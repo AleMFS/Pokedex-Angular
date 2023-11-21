@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { forkJoin } from 'rxjs';
 import { PokedexService } from 'src/app/service/pokedex.service';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -15,6 +16,8 @@ export class HomeComponent {
   typeSelected: any[] = [];
 
   page:number = 1;
+
+  loading: boolean = true;
 
   constructor(private dataService: PokedexService) {
   }
@@ -72,6 +75,7 @@ export class HomeComponent {
   }
 
   requisicaoAPI() {
+    this.loading = true;
     this.dataService.getPokemons()
       .subscribe((response: any) => {
         const requests = response.results.map((result: { name: string }) =>
@@ -81,7 +85,7 @@ export class HomeComponent {
         forkJoin(requests).subscribe((responses: any) => {
           this.pokemon = responses;
           this.pokemonteste = responses
-
+          this.loading = false;
           
 
         });

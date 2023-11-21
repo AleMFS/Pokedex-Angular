@@ -1,8 +1,16 @@
 <div class="container">
+    <div class="logo">
+        <img [src]="'../../../assets/Logo.png'" alt="">
+    </div>
+
     <app-pokemon-filters (filtrarPokemons)="chooseElement($event)"
         (searchInput)="handleSearchPokemonPai($event)"></app-pokemon-filters>
+    <div class="loading-spinner" *ngIf="loading">
+        <!-- Use uma animação CSS aqui, por exemplo, uma rotação -->
+        <div class="spinner"></div>
+    </div>
     <app-pokemon-list [page]="page" (stringGerada)="receberString($event)" (abrirFilho2)="onOpenOrCloseModal()"
-        [pokemon]="pokemon"></app-pokemon-list>
+        [pokemon]="pokemon" *ngIf="!loading"></app-pokemon-list>
     <app-modal-pokemon [dados]="pokemonSelected" [pokemonData]="PokemonData" *ngIf="isModalOpen"
         (closeModal)="onOpenOrCloseModal()"></app-modal-pokemon>
     <app-footer></app-footer>

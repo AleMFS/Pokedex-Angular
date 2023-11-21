@@ -1,4 +1,4 @@
-# Project LOL
+# Pokedex Angular
 
 
 ## 💻 Sobre
@@ -30,7 +30,10 @@ Para rodar esse projeto em seu computador:
 ```
 
 ![](.//src//assets//Git.png)
+<<<<<<< HEAD
 ![](.//src//assets//Git2.png)
 
+=======
+>>>>>>> 270f2020c181e5ae86994c30c085a064a5e9a077
 
 
